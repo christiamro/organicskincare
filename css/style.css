@@ -1,0 +1,44 @@
+* {
+     font-family: 'Mukta', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+/*headear inicio*/
+header {
+    background-color: rgb(231, 216, 175);
+    padding: 0 0 1rem 0;
+}
+div nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    }
+.navegacion-inicio{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+/*headear fin*/
+/*logo*/
+.imagenlogo{
+    width: 100%;
+    border-radius: 30rem;
+}
+/*logo*/
+/*main inicio*/
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+main section p {
+    text-align: center;
+    background-image: -moz-element();
+}
+.imagenesinicio1 {
+
+}
+/*main fin*/
