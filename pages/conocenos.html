@@ -1,48 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/style.css">
-        <title>Organic Skin Care</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300&family=Open+Sans:ital,wght@0,300;0,400;1,500&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Organic Skin Care</title>
+  </head>
 
     <body>
         <header>
-            <div>
-                <!--Logo de la empresa-->
-                <img src="./img/logo.png"
-                    alt="organicskincare-Logo" />
-            </div>
-
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">INICIO</a></li>
-                        <li><a href="./conocenos.html">CONOCENOS</a></li>
-                        <li><a href="./productos.html">PRODUCTOS</a></li>
-                        <li><a href="./rutinas.html">RUTINAS</a></li>
-                        <li><a href="./contacto.html">CONTACTO</a></li>
-                    </ul>
-                </nav>
-            </div>
+          <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <img class="imagenlogo" src="./img/logo.png"
+                  alt="organicskincare-Logo" />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav" aria-controls="navbarNav"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page"
+                        href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./conocenos.html">Conocenos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./rutinas.html">Rutinas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
         </header>
         <main>
-            <section>
+            <section class="container">
                 <h1>Conoce mas sobre nosotros</h1>
                 <p>Somos una empresa enfocada en ofrecer una experiencia única
                     de cuidado de la piel orgánica, brindando información
                     detallada sobre ingredientes naturales y consejos prácticos
                     para una rutina saludable.</p>
             </section>
-            <div>
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/NqQzPsI7bB0?si=_NxMlxCijwtUHhLz"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+            <div class="carrusel">
+              <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/productosvarios.jpg" class="d-block w-100" alt="productosvinevera">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/productosvarios2.jpg" class="d-block w-100" alt="productosvinevera2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/productosvarios3.jpg" class="d-block w-100" alt="productosvinevera3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
-            <section>
+          
+            <section class="container">
                 <p>Descubre la esencia de la belleza orgánica con nuestros
                     productos y rutinas que solo se enfocan en proporcionar
                     soluciones sostenibles para el cuidado de la piel, desde
@@ -50,21 +94,27 @@
                     piel radiante.</p>
             </section>
         </main>
-        <footer>
-            <ul>
-                <li>Solicita una cita con nosotros</li>
-                <div>
-                  <img src="./img/llamada.png" alt="Logo de llamada de contacto" />
-                </div>
-                <li>Escribenos a traves de Whatsapp</li>
-                <div>
-                  <img src="./img/wpp.jpg" alt="Logo de Whatsapp" />
-                </div>
-                <li>Consultas y dudas</li>
-                <div>
-                  <img src="./img/usuario.png" alt="Logo de usuario para dudas" />
-                </div>
-              </ul>
-        </footer>
+        
+        <footer class="footer-grids">
+          <div>
+              <img src="./img/whatsapp.png" alt="whatsapp"></a>
+              <h2>Solicita una cita con nosotros</h2>
+              <p>Comunicate con nosotros a traves de WhastApp para mayor informacion</p>
+          </div>
+          <div>
+              <img src="./img/pregunta.png" alt="logo-envio">
+              <h2>Consultas y Reclamos</h2>
+              <p>Estamos para resolver de la mejor manera posible todos los inconvenientes que puedas tener con tus tratamientos</p>
+          </div>
+          <div>
+              <img src="./img/usuario.png" alt="logo-usuario">
+              <h2>Asesoramiento</h2>
+              <p>Te asesoramos detalladamente en cada rutina que desees adquirir</p>
+          </div>
+      </footer>
     </body>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </html>
