@@ -1,0 +1,177 @@
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/mediasquery";
+
+
+//Generales
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/backg.jpeg");
+   }
+
+//Header
+
+header {
+    .navbar {
+        .container-fluid {
+            .imagenlogo {
+                width: 10%;
+                border-radius: 30rem;
+            }
+        }
+    }
+}
+
+//Main
+
+
+main {
+    .container {
+        flex-direction: column;
+        @include flex(flex, space-between, center);
+
+        .titulo {
+            flex-wrap: wrap;
+            margin: 0;
+            @include text(roboto, 1.5rem, $color-primario);
+            @include flex(flex, center, center);
+        }
+
+        h1 {
+            color: $color-primario;
+        }
+    }
+
+    .carrusel {
+        width: 100%;
+        padding: 5rem;
+    }
+
+    .principal {
+        flex-direction: row;
+        flex-wrap: wrap;
+        @include flex(flex, space-between, center);
+
+        p {
+            flex: 1;
+            margin-right: 10px;
+            color: $color-secundario
+        }
+
+        img {
+            width: 50%;
+        }
+    }
+
+    .container2 {
+        flex-wrap: wrap;
+        @include flex(flex, space-between, center);
+
+        div {
+            text-align: center;
+            flex: 1 0 45%;
+            margin: 1rem;
+
+            h2 {
+                margin-bottom: 10px;
+                color: $color-primario
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .animaciones {
+        width: 400px;
+        height: 300px;
+        margin-bottom: 30px;
+        object-fit: cover;
+        display: inline-block;
+        padding-top: 20px;
+        transition: all 2s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    
+    }
+
+    //formulario
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 15px;
+
+        .formulario {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 10px solid $color-primario;
+            border-radius: 10px;
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+        }
+
+        button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: 2px solid $color-primario;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 auto;
+            font-family: "Fjalla One", sans-serif;
+            background-color: $color-primario;
+            color: white;
+
+            &:hover {
+                background: white;
+                color: $color-secundario;
+            }
+        }
+    }
+
+//footer
+
+.footer-grids {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+
+    div {
+        border: 1px solid #ccc;
+        padding: 20px;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

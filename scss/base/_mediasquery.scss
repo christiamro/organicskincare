@@ -1,0 +1,15 @@
+@media screen and (max-width: 792px) {
+    .footer-grids {
+        grid-template-columns: 1fr;
+    }
+   }
+   @media screen and (max-width: 320px) {
+    .container2 div {
+      flex: 100%; 
+    }
+   }
+   @media screen and (max-width: 768px) {
+    .carrusel {
+      max-width: 100%; 
+    }
+   }
